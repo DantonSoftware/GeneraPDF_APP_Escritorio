@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0-windows\miHtml.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0-windows\wkhtmltoimage.exe" />
+    <None Include="bin\Debug\net8.0-windows\wkhtmltopdf.exe" />
+    <None Include="bin\Debug\net8.0-windows\wkhtmltox.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaPDF">
+      <HintPath>..\LibreriaPDF\bin\Debug\LibreriaPDF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

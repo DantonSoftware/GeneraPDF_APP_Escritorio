@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+
+        .reporte {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="reporte">
+        <h1>Reporte de Actividad</h1>
+        <h2>Fecha: <span id="fecha"></span></h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Descripción</th>
+                    <th>Responsable</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-contenido">
+                <tr>
+                    <td>1</td>
+                    <td>Tarea de ejemplo</td>
+                    <td>Juan Pérez</td>
+                    <td>Completo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Revisión de informes</td>
+                    <td>Ana Gómez</td>
+                    <td>En progreso</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-ES');
+    </script>
+</body>
+</html>
